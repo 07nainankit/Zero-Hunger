@@ -1,0 +1,155 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.nav-bar {
+    background-color: #4CAF50;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar ul li { 
+    margin: 0 1em;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recipes-header {
+    background: linear-gradient(to right, rgba(70, 130, 180, 0.8), rgba(60, 110, 160, 0.8));
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}
+
+.recipes-header h1 {
+    font-size: 3rem;
+}
+
+.recipes-section {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recipes-section h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipes-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.recipes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recipe-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-content {
+    padding: 20px;
+}
+
+.recipe-content h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+}
+
+.recipe-content p {
+    font-size: 1rem;
+    margin: 0 0 20px;
+}
+
+.recipe-content a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+.recipe-content a:hover {
+    color: #388E3C;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipes-footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .recipes-header h1 {
+        font-size: 2rem;
+    }
+
+    .recipes-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .recipes-section p {
+        font-size: 1rem;
+    }
+
+    .recipe-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
