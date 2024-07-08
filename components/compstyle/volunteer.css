@@ -1,4 +1,4 @@
-/* styles.css */
+/* volunteer.css */
 
 body {
     margin: 0;
@@ -24,13 +24,13 @@ body {
     margin: 0 1em;
 }
 
-.nav-bar ul li a { 
+.nav-bar ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-.stories-header {
+.volunteer-header {
     background: linear-gradient(to right, rgba(255, 165, 0, 0.8), rgba(255, 140, 0, 0.8));
     color: white;
     text-align: center;
@@ -38,20 +38,20 @@ body {
 }
 
 @media (max-width: 600px) {
-    nav ul {
+    .nav-bar ul {
         flex-direction: column;
     }
 
-    nav ul li {
+    .nav-bar ul li {
         margin: 0.5em 0;
     }
 }
 
-.stories-header h1 {
+.volunteer-header h1 {
     font-size: 3rem;
 }
 
-.stories-section {
+.volunteer-section {
     padding: 40px 20px;
     background-color: white;
 }
@@ -61,27 +61,27 @@ body {
     margin: 0 auto;
 }
 
-.stories-section h2 {
+.volunteer-section h2 {
     color: #FF8C00;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.stories-section p {
+.volunteer-section p {
     text-align: center;
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 40px;
 }
 
-.stories-grid {
+.volunteer-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-.story-card {
+.volunteer-card {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -91,43 +91,43 @@ body {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.story-card img {
+.volunteer-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.story-content {
+.volunteer-content {
     padding: 20px;
 }
 
-.story-content h3 {
+.volunteer-content h3 {
     font-size: 1.2rem;
     margin: 0 0 10px;
 }
 
-.story-content p {
+.volunteer-content p {
     font-size: 1rem;
     margin: 0 0 20px;
 }
 
-.story-content a {
+.volunteer-content a {
     color: #FF8C00;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.2s ease-in-out;
 }
 
-.story-content a:hover {
+.volunteer-content a:hover {
     color: #FF4500;
 }
 
-.story-card:hover {
+.volunteer-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.stories-footer {
+.volunteer-footer {
     text-align: center;
     padding: 20px 0;
     background-color: #333;
@@ -136,19 +136,19 @@ body {
 }
 
 @media (max-width: 768px) {
-    .stories-header h1 {
+    .volunteer-header h1 {
         font-size: 2rem;
     }
 
-    .stories-section h2 {
+    .volunteer-section h2 {
         font-size: 1.5rem;
     }
 
-    .stories-section p {
+    .volunteer-section p {
         font-size: 1rem;
     }
 
-    .story-card {
+    .volunteer-card {
         width: 100%;
         max-width: 400px;
     }
