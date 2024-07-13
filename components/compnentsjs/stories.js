@@ -1,34 +1,34 @@
-// scripts.js
-
+ 
 document.addEventListener('DOMContentLoaded', () => {
     const storiesGrid = document.getElementById('stories-grid');
 
     // Example stories data (replace with actual API call)
     const stories = [
         {
-            title: "Community Garden Success",
-            description: "Discover how a small town transformed vacant land into thriving community gardens, providing fresh produce to those in need.",
+            title: "Cyclone Mocha Recovery in Myanmar",
+            description: "In the aftermath of Cyclone Mocha, which affected 1.9 million people, local volunteers, supported by the UNDP, led recovery efforts, helping communities rebuild their lives and ensuring food security during the crisis.",
             imageUrl: "story1.jpg",
-            link: "https://example.com/community-garden-success"
+            link: "https://www.unv.org/sustainable-development-goal/sdg-2-zero-hunger"
         },
         {
-            title: "Feeding Families Initiative",
-            description: "Learn about an initiative that supports local families by distributing healthy food boxes and offering nutrition education.",
+            title: "Food Insecurity in Zambia",
+            description: "In Zambia, the UN and local organizations have been working with smallholder farmers to tackle food insecurity. Through partnerships and sustainable agricultural practices, these efforts aim to improve the food supply and livelihoods of rural populations​.",
             imageUrl: "story2.jpg",
-            link: "https://example.com/feeding-families-initiative"
+            link: "https://www.unv.org/sustainable-development-goal/sdg-2-zero-hunger"
         },
         {
-            title: "Innovative Farming Techniques",
-            description: "Explore how farmers are using innovative techniques to increase crop yields and support sustainable agriculture.",
+            title: "UN Volunteers in Iraq",
+            description: "In Iraq’s Duhok Governorate, UN Volunteers collaborated with local authorities to reform the Public Distribution System, ensuring that vulnerable families receive essential food supplies efficiently.​",
             imageUrl: "story3.jpg",
-            link: "https://example.com/innovative-farming-techniques"
+            link: "https://www.unv.org/sustainable-development-goal/sdg-2-zero-hunger"
         },
         {
-            title: "Youth Empowerment in Agriculture",
-            description: "Read about young leaders who are pioneering agricultural projects and empowering their communities.",
+            title: "RESIGUI Project in Guinea",
+            description: "This project, funded by the European Union, provided cash transfers and nutritional support to 20,000 households in Guinea. It also helped communities with agricultural activities, contributing to food security and economic stability​.",
             imageUrl: "story4.jpg",
-            link: "https://example.com/youth-empowerment-agriculture"
-        }
+            link: "https://www.unv.org/sustainable-development-goal/sdg-2-zero-hunger"
+        },
+
     ];
 
     // Render stories dynamically
@@ -36,11 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const storyCard = document.createElement('div');
         storyCard.classList.add('story-card');
         storyCard.innerHTML = `
-            <img src="${story.imageUrl}" alt="${story.title}">
             <div class="story-content">
                 <h3>${story.title}</h3>
                 <p>${story.description}</p>
-                <a href="${story.link}" target="_blank">Read More</a>
+                <a href="${story.link}" target="_blank">Read More</a> 
             </div>
         `;
         storiesGrid.appendChild(storyCard);

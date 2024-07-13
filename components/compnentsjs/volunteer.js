@@ -6,28 +6,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Example volunteer opportunities data (replace with actual API call or data source)
     const volunteerOpportunities = [
         {
-            title: "Food Bank Assistant",
-            description: "Help organize and distribute food at the local food bank.",
+            title: "World Food Programme",
+            description: "Volunteer with WFP and help us achieve Zero Hunger.",
             imageUrl: "/images/food-bank.jpg",
-            link: "https://example.com/food-bank-assistant"
+            link: "https://www.wfp.org/careers/volunteers#:~:text=Volunteer%20with%20WFP%20and%20help,organization%20in%20different%20functional%20areas."
         },
         {
-            title: "Community Garden Helper",
-            description: "Assist in maintaining and harvesting crops in community gardens.",
+            title: "Volunteer World",
+            description: "Join Volunteer World and support Zero Hunger goal.",
+            imageUrl: "/images/food-bank.jpg",
+            link: "https://www.volunteerworld.com/en/volunteer-abroad/goal-2-zero-hunger"
+        },
+        {
+            title: "Thuvakkam Zero Hunger Drive",
+            description: "Sponsor the food for needy people by Zero Hunger Drive.",
             imageUrl: "/images/community-garden.jpg",
-            link: "https://example.com/community-garden-helper"
+            link: "https://thuvakkam.org/zero-hunger-drive/"
         },
         {
-            title: "Meal Delivery Driver",
-            description: "Deliver meals to those in need within your community.",
-            imageUrl: "/images/meal-delivery.jpg",
-            link: "https://example.com/meal-delivery-driver"
-        },
-        {
-            title: "Nutrition Workshop Volunteer",
-            description: "Support educational workshops on nutrition and healthy eating.",
+            title: "Best Zero Hunger Organizations",
+            description: "Visit and explore various top organizations that work for Zero hunger goal.",
             imageUrl: "/images/nutrition-workshop.jpg",
-            link: "https://example.com/nutrition-workshop-volunteer"
+            link: "https://www.goodera.com/blog/zero-hunger-organizations"
         }
     ];
 
@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const volunteerCard = document.createElement('div');
         volunteerCard.classList.add('volunteer-card');
         volunteerCard.innerHTML = `
-            <img src="${volunteer.imageUrl}" alt="${volunteer.title}">
             <div class="volunteer-content">
                 <h3>${volunteer.title}</h3>
                 <p>${volunteer.description}</p>
